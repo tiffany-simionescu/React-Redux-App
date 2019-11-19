@@ -15,15 +15,10 @@ const FoxImage = props => {
     <div>
       <h1>Fox Image Generator</h1>
       <div>
-        {props.fox.map(fox => {
-          return (
             <img 
-              key={fox.link}
-              src={fox.image}
-              alt="fox image"
+              src={props.fox}
+              alt="fox"
             />
-          )
-        })}
       </div>
       {props.error && <p className="error">{props.error}</p>}
       <button onClick={fetchFoxImage}>New Fox Image</button>
@@ -38,4 +33,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { fetchFoxImage })(FoxImage);
+export default connect(mapStateToProps, { getFoxImage })(FoxImage);
