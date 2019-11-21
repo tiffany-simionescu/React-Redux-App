@@ -1,24 +1,20 @@
-import axios from 'axios';
+export { 
+  FETCH_CAT_IMAGE_START, 
+  FETCH_CAT_IMAGE_SUCCESS, 
+  FETCH_CAT_IMAGE_FAILURE, 
+  getCatImage
+} from './catAction';
 
-export const FETCH_FOX_IMAGE_START = 'FETCH_FOX_IMAGE_START';
-export const FETCH_FOX_IMAGE_SUCCESS = 'FETCH_FOX_IMAGE_SUCCESS';
-export const FETCH_FOX_IMAGE_FAILURE = 'FETCH_FOX_IMAGE_FAILURE';
+export {
+  FETCH_DOG_IMAGE_START,
+  FETCH_DOG_IMAGE_SUCCESS,
+  FETCH_DOG_IMAGE_FAILURE,
+  getDogImage
+} from './dogAction';
 
-const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-const url = 'http://randomfox.ca/floof';
-
-export const getFoxImage = () => dispatch => {
-    dispatch({ type: FETCH_FOX_IMAGE_START });
-    axios.get(proxyurl + url)
-      .then(res => {
-        console.log(res);
-        dispatch({ type: FETCH_FOX_IMAGE_SUCCESS, payload: res.data.image })
-      })
-      .catch(err => {
-        console.log(err);
-        dispatch({
-          type: FETCH_FOX_IMAGE_FAILURE,
-          payload: `${err.response}`
-        })
-      })
-}
+export {
+  FETCH_FOX_IMAGE_START,
+  FETCH_FOX_IMAGE_SUCCESS,
+  FETCH_FOX_IMAGE_FAILURE,
+  getFoxImage
+} from './foxAction';
