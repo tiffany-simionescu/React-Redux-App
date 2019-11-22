@@ -4,7 +4,6 @@ export const FETCH_DOG_IMAGE_START = 'FETCH_DOG_IMAGE_START';
 export const FETCH_DOG_IMAGE_SUCCESS = 'FETCH_DOG_IMAGE_SUCCESS';
 export const FETCH_DOG_IMAGE_FAILURE = 'FETCH_DOG_IMAGE_FAILURE';
 
-// const proxyurl = 'https://cors-anywhere.herokuapp.com/';
 const url = 'https://random.dog/woof.json';
 
 export const getDogImage = () => dispatch => {

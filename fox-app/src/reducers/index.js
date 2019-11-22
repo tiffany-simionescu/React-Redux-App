@@ -1,15 +1,3 @@
-// import { combineReducers } from 'redux';
-
-// export { foxReducer } from './foxReducer';
-// export { catReducer } from './catReducer';
-// export { dogReducer } from './dogReducer';
-
-// export const rootReducer = combineReducers({
-//   foxReducer, 
-//   catReducer, 
-//   dogReducer
-// })
-
 import { 
   FETCH_FOX_IMAGE_START, 
   FETCH_FOX_IMAGE_SUCCESS, 
@@ -25,7 +13,6 @@ import {
 const initialState = {
   fox: 'http://randomfox.ca/images/68.jpg',
   dog: 'https://random.dog/aa8e5e24-5c58-4963-9809-10f4aa695cfc.jpg',
-  // cat: 'https://aws.random.cat/view/768.jpg',
   cat: 'https:\/\/purr.objects-us-east-1.dream.io\/i\/030_-_VNZ6Gt8.gif',
   error: '',
   isFetching: false

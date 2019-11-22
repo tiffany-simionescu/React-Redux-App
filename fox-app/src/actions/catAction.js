@@ -4,7 +4,6 @@ export const FETCH_CAT_IMAGE_START = 'FETCH_CAT_IMAGE_START';
 export const FETCH_CAT_IMAGE_SUCCESS = 'FETCH_CAT_IMAGE_SUCCESS';
 export const FETCH_CAT_IMAGE_FAILURE = 'FETCH_CAT_IMAGE_FAILURE';
 
-// const proxyurl = 'https://cors-anywhere.herokuapp.com/';
 const url = 'https://aws.random.cat/meow';
 
 export const getCatImage = () => dispatch => {
